@@ -1,23 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Impresionante</title>
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <header>
+      <h1>Página Impresionante</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="page2.html">Otra Página</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <h1>Home page</h1>
+      <section id="presentacion">
+        <h2>Bienvenido a nuestra página impresionante</h2>
+        <p>
+          Esta es una demostración de una página web llamativa con un formulario
+          y navegación entre páginas.
+        </p>
+      </section>
+      <section id="formulario">
+        <h2>Formulario de contacto</h2>
+        <form id="contact-form">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="form-result"></p>
+      </section>
+      <section>
+        <button onclick="cambiarColor('red');">
+          Cambiar color del texto a rojo
+        </button>
+        <button onclick="cambiarTamano('24px');">
+          Cambiar tamaño del texto
+        </button>
+        <button onclick="cambiarFuente('Arial');">
+          Cambiar fuente a Arial
+        </button>
+        <p><a href="segunda_pagina.html">Ir a la segunda página</a></p>
+      </section>
     </main>
+    <footer>
+      <p>Copyright 2023 - Página Impresionante</p>
+    </footer>
   </body>
 </html>
