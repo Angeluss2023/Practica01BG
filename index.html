@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plan Ambiental</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script1.js" defer></script>
   </head>
   <body>
     <header class="header-con-fondo">
-      <h1>Plan Ambiental</h1>
-      <nav>
-        <ul>
-          <li><a class="in" href="index.html">Inicio</a></li>
-          <li><a class="in" href="page2.html">Acerca de Nosotros</a></li>
+      <nav class="navbar">
+        <input type="checkbox" id="navbar-toggle" />
+        <label for="navbar-toggle" class="navbar-toggle-label">&#9776;</label>
+        <a href="index.html" class="navbar-brand">Plan Ambiental</a>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">Inicio</a>
+          </li>
+          <li class="navbar-item">
+            <a href="page2.html" class="navbar-link">Acerca de Nosotros</a>
+          </li>
+          <li class="navbar-item">
+            <a href="page3.html" class="navbar-link">Servicios</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#formulario" class="navbar-link">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section id="presentacion">
+      <article>
         <h2>Bienvenido a nuestra página ambiental</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           vitae lectus augue. Nulla quis feugiat mi, nec sollicitudin arcu.
           Vivamus facilisis purus et ante posuere, sit amet scelerisque augue
           rhoncus. Pellentesque habitant morbi tristique senectus et netus et
@@ -30,13 +39,14 @@
           nisi vel ante rutrum eleifend. Fusce eget justo ac ligula suscipit
           lobortis. Proin elit augue, semper eu ipsum eget, sodales euismod
           nisi. Duis vestibulum, ipsum eget volutpat vulputate, lacus lorem
-          vehicula enim, blandit maximus sapien diam ut libero. Nulla in
+          vehicula enim, blandit maximus
+          sapien diam ut libero. Nulla in
           faucibus erat. Suspendisse laoreet consectetur magna tempus lobortis.
           Sed quis tortor vitae justo blandit dictum. Nulla ac magna viverra,
           aliquam ante sed, euismod felis. Duis blandit nisi eu nunc feugiat, ac
           luctus velit posuere.
-        </p>
-        <p>
+          </p>
+          <p>
           Donec convallis, justo vulputate varius iaculis, ex lacus mollis nisl,
           non lobortis lectus ipsum sed nunc. Duis quis bibendum nulla, ac
           pulvinar felis. Pellentesque condimentum ipsum purus, eget consequat
@@ -45,8 +55,8 @@
           augue hendrerit, lacinia velit ut, blandit dui. Curabitur eleifend
           ultricies tempus. Nullam ex enim, sollicitudin quis vulputate non,
           cursus et est.
-        </p>
-        <p>
+          </p>
+          <p>
           Morbi ultrices, purus vitae tincidunt ornare, eros sapien faucibus
           tortor, auctor faucibus nunc felis lacinia enim. Nullam imperdiet
           bibendum nibh, facilisis aliquet metus rutrum sed. Morbi sed lectus
@@ -59,8 +69,8 @@
           et, maximus commodo nunc. Duis turpis orci, fringilla non venenatis
           ac, suscipit volutpat mi. Vestibulum nec mollis leo. Cras molestie id
           ligula eu venenatis.
-        </p>
-        <p>
+          </p>
+          <p>
           Etiam sit amet augue mollis, placerat lectus a, auctor dolor. Etiam
           viverra elit vel ante venenatis vehicula. Donec ultrices volutpat
           ipsum, ut sollicitudin diam convallis sit amet. Curabitur sollicitudin
@@ -72,49 +82,40 @@
           nec gravida et, ullamcorper id sem. Quisque efficitur erat a nisi
           finibus, in vestibulum turpis laoreet. Aliquam vel enim egestas,
           tincidunt metus vel, tincidunt magna. Etiam tellus lorem, lobortis eu
-          turpis at, pretium tristique mi. Integer mattis tellus id quam
+          turpisat, pretium tristique mi. Integer mattis tellus id quam
           hendrerit ultrices. Fusce ac volutpat tortor.
-        </p>
-        <p>
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-          posuere cubilia curae; Suspendisse tristique congue porttitor. Integer
-          ante orci, elementum nec placerat ut, vestibulum at purus. Nunc et
-          ante non metus vehicula bibendum sollicitudin consequat augue. Sed
-          eget augue sit amet ipsum accumsan sodales. Praesent aliquet sodales
-          turpis, vitae varius risus venenatis eget. Phasellus libero sapien,
-          euismod ut leo at, maximus varius purus. Nunc at nunc sollicitudin,
-          fermentum ipsum sit amet, pharetra eros. Praesent finibus fermentum
-          enim, vitae fermentum sem feugiat at. Cras condimentum laoreet
-          lobortis
-        </p>
-      </section>
-      <section id="formulario">
-        <h2>Formulario de contacto</h2>
-        <form id="contact-form">
+          </p>
+          </section>
+          <section id="contacto">
+          <h2>Contacto</h2>
+          <form id="contact-form" method="post">
           <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" required />
+          <input type="text" id="nombre" name="nombre" required />
           <label for="email">Email:</label>
-          <input type="email" id="email" required />
+          <input type="email" id="email" name="email" required />
           <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" required></textarea>
+          <textarea id="mensaje" name="mensaje" required></textarea>
           <button type="submit">Enviar</button>
-        </form>
-        <p id="form-result"></p>
-      </section>
-      <section>
-        <button onclick="cambiarColor('red');">
+          </form>
+          <p id="form-result"></p>
+          </section>
+          <section>
+          <h2>Ajustes de presentación</h2>
+          <div class="botones-ajustes">
+          <button onclick="cambiarColor('red');">
           Cambiar color del texto a rojo
-        </button>
-        <button onclick="cambiarTamano('24px');">
+          </button>
+          <button onclick="cambiarTamano('24px');">
           Cambiar tamaño del texto
-        </button>
-        <button onclick="cambiarFuente('Arial');">
+          </button>
+          <button onclick="cambiarFuente('Arial');">
           Cambiar fuente a Arial
-        </button>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright 2023 - Página Impresionante</p>
-    </footer>
-  </body>
-</html>
+          </button>
+          </div>
+          </section>
+          </main>
+          <footer>
+          <p>© 2023 - Página Impresionante</p>
+          </footer>
+            </body>
+          </html>
