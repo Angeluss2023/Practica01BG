@@ -9,10 +9,14 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background-color: #2c3e50;
-  color: #fff;
-  padding: 1.5rem;
+.header-con-fondo {
+  background-image: url('https://source.unsplash.com/900x400?nature,tree');
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Ajusta la altura según la necesidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header h1 {
   display: inline;
@@ -72,4 +76,12 @@ footer {
   color: #fff;
   padding: 1rem;
   text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.in {
+  color: aqua;
 }

@@ -10,5 +10,4 @@ function cambiarFuente(fuente) {
 const contactForm = document.getElementById('contact-form');
 const formResult = document.getElementById('form-result');
 
-contactForm.addEventListener('submit',
-
+contactForm.addEventListener('submit');
