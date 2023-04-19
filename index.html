@@ -2,120 +2,73 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plan Ambiental</title>
+    <title>Introducción a los estándares HTML</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header-con-fondo">
-      <nav class="navbar">
-        <input type="checkbox" id="navbar-toggle" />
-        <label for="navbar-toggle" class="navbar-toggle-label">&#9776;</label>
-        <a href="index.html" class="navbar-brand">Plan Ambiental</a>
-        <ul class="navbar-menu">
-          <li class="navbar-item">
-            <a href="index.html" class="navbar-link">Inicio</a>
-          </li>
-          <li class="navbar-item">
-            <a href="page2.html" class="navbar-link">Acerca de Nosotros</a>
-          </li>
-          <li class="navbar-item">
-            <a href="page3.html" class="navbar-link">Servicios</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#formulario" class="navbar-link">Contacto</a>
-          </li>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="standards.html">Estándares HTML</a></li>
+          <li><a href="structure.html">Estructura de la página web</a></li>
+          <li><a href="html.html">Componentes/elementos de HTML</a></li>
+          <li><a href="css.html">Estilos para CSS</a></li>
+          <li><a href="javascript.html">Funciones de JS</a></li>
+          <li><a href="validators.html">Validadores de estándares HTML</a></li>
         </ul>
       </nav>
     </header>
-      <article>
-        <h2>Bienvenido a nuestra página ambiental</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          vitae lectus augue. Nulla quis feugiat mi, nec sollicitudin arcu.
-          Vivamus facilisis purus et ante posuere, sit amet scelerisque augue
-          rhoncus. Pellentesque habitant morbi tristique senectus et netus et
-          malesuada fames ac turpis egestas. Nam fringilla bibendum consectetur.
-          In et orci a diam rutrum egestas vel id mauris. Vestibulum lacinia
-          nisi vel ante rutrum eleifend. Fusce eget justo ac ligula suscipit
-          lobortis. Proin elit augue, semper eu ipsum eget, sodales euismod
-          nisi. Duis vestibulum, ipsum eget volutpat vulputate, lacus lorem
-          vehicula enim, blandit maximus
-          sapien diam ut libero. Nulla in
-          faucibus erat. Suspendisse laoreet consectetur magna tempus lobortis.
-          Sed quis tortor vitae justo blandit dictum. Nulla ac magna viverra,
-          aliquam ante sed, euismod felis. Duis blandit nisi eu nunc feugiat, ac
-          luctus velit posuere.
-          </p>
-          <p>
-          Donec convallis, justo vulputate varius iaculis, ex lacus mollis nisl,
-          non lobortis lectus ipsum sed nunc. Duis quis bibendum nulla, ac
-          pulvinar felis. Pellentesque condimentum ipsum purus, eget consequat
-          lacus commodo quis. Nam nec ante cursus leo dapibus semper. Donec
-          aliquet tempus massa, vel porta arcu interdum nec. Curabitur eget
-          augue hendrerit, lacinia velit ut, blandit dui. Curabitur eleifend
-          ultricies tempus. Nullam ex enim, sollicitudin quis vulputate non,
-          cursus et est.
-          </p>
-          <p>
-          Morbi ultrices, purus vitae tincidunt ornare, eros sapien faucibus
-          tortor, auctor faucibus nunc felis lacinia enim. Nullam imperdiet
-          bibendum nibh, facilisis aliquet metus rutrum sed. Morbi sed lectus
-          non magna tempus lobortis sed et nisi. Vestibulum sit amet bibendum
-          orci. Quisque elementum, magna eu euismod tempus, mauris dui blandit
-          mi, vel dignissim est odio in leo. Duis non laoreet massa, non aliquet
-          lacus. Nam semper sit amet justo id gravida. Suspendisse vitae sapien
-          non augue blandit dictum. Vestibulum tortor nisl, pretium non
-          vestibulum in, bibendum ac justo. Nunc nisi lectus, aliquam et erat
-          et, maximus commodo nunc. Duis turpis orci, fringilla non venenatis
-          ac, suscipit volutpat mi. Vestibulum nec mollis leo. Cras molestie id
-          ligula eu venenatis.
-          </p>
-          <p>
-          Etiam sit amet augue mollis, placerat lectus a, auctor dolor. Etiam
-          viverra elit vel ante venenatis vehicula. Donec ultrices volutpat
-          ipsum, ut sollicitudin diam convallis sit amet. Curabitur sollicitudin
-          dolor in ante hendrerit, eget rhoncus diam dapibus. Praesent tincidunt
-          mattis leo ac interdum. Nullam nec maximus odio. Duis purus turpis,
-          venenatis et tincidunt et, tempus in lacus. Etiam non metus auctor,
-          rutrum est sit amet, iaculis nulla. Suspendisse elementum dignissim
-          nulla, ac dignissim arcu finibus vitae. Aliquam tortor lacus, suscipit
-          nec gravida et, ullamcorper id sem. Quisque efficitur erat a nisi
-          finibus, in vestibulum turpis laoreet. Aliquam vel enim egestas,
-          tincidunt metus vel, tincidunt magna. Etiam tellus lorem, lobortis eu
-          turpisat, pretium tristique mi. Integer mattis tellus id quam
-          hendrerit ultrices. Fusce ac volutpat tortor.
-          </p>
-          </section>
-          <section id="contacto">
-          <h2>Contacto</h2>
-          <form id="contact-form" method="post">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
-          <button type="submit">Enviar</button>
-          </form>
-          <p id="form-result"></p>
-          </section>
-          <section>
-          <h2>Ajustes de presentación</h2>
-          <div class="botones-ajustes">
-          <button onclick="cambiarColor('red');">
-          Cambiar color del texto a rojo
-          </button>
-          <button onclick="cambiarTamano('24px');">
-          Cambiar tamaño del texto
-          </button>
-          <button onclick="cambiarFuente('Arial');">
-          Cambiar fuente a Arial
-          </button>
-          </div>
-          </section>
-          </main>
-          <footer>
-          <p>© 2023 - Página Impresionante</p>
-          </footer>
-            </body>
-          </html>
+    <main>
+      <h1>Introducción a los estándares HTML</h1>
+      <p>
+        En esta página encontrarás información sobre los estándares HTML y su
+        importancia en la creación de sitios web.
+      </p>
+      <section>
+        <h2>¿Qué son los estándares HTML?</h2>
+        <p>
+          Los estándares HTML son un conjunto de reglas y especificaciones que
+          definen cómo deben estructurarse y presentarse las páginas web. Estos
+          estándares son desarrollados y mantenidos por el World Wide Web
+          Consortium (W3C) y están diseñados para garantizar la accesibilidad,
+          la compatibilidad y la interoperabilidad entre diferentes navegadores
+          y dispositivos.
+        </p>
+        <p>
+          Al utilizar los estándares HTML, los desarrolladores web pueden crear
+          páginas web que sean fáciles de usar, rápidas de cargar y compatibles
+          con la mayoría de los navegadores y dispositivos.
+        </p>
+      </section>
+      <section>
+        <h2>¿Por qué son importantes los estándares HTML?</h2>
+        <p>Los estándares HTML son importantes por varias razones:</p>
+        <ul>
+          <li>
+            Aseguran la accesibilidad y la usabilidad de las páginas web para
+            todos los usuarios, independientemente de su dispositivo o
+            discapacidad.
+          </li>
+          <li>
+            Garantizan la compatibilidad entre diferentes navegadores y
+            dispositivos, lo que significa que los usuarios pueden acceder a las
+            páginas web de manera uniforme en cualquier dispositivo y navegador.
+          </li>
+          <li>
+            Promueven la interoperabilidad entre diferentes sistemas y
+            aplicaciones, lo que facilita la integración de diferentes
+            tecnologías en una página web.
+          </li>
+          <li>
+            Ayudan a los desarrolladores web a crear páginas web más eficientes
+            y fáciles de mantener.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Derechos reservados &copy; 2023</p>
+    </footer>
+  </body>
+</html>
